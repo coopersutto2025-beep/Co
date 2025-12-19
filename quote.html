@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get a Quote • Spotless & Co</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="logo" href="index.html">Spotless &amp; Co</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="services.html">Services</a>
+        <a class="nav__link nav__link--cta" href="quote.html" aria-current="page">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container narrow">
+        <h1 class="h1">Request a Quote</h1>
+        <p class="lead">Fill this out and we’ll reply with a clear quote and the next available times.</p>
+
+        <!-- This form is front-end only. Connect it to your email/service later. -->
+        <form class="form card" action="#" method="post">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email (optional)</label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+          </div>
+
+          <div class="field">
+            <label for="type">Cleaning type</label>
+            <select id="type" name="type" required>
+              <option value="">Select…</option>
+              <option>Residential</option>
+              <option>Commercial</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="service">Service needed</label>
+            <select id="service" name="service" required>
+              <option value="">Select…</option>
+              <option>Deep Clean</option>
+              <option>End of Lease Clean</option>
+              <option>Airbnb / Short-stay Clean</option>
+              <option>Regular Clean</option>
+              <option>Office / Commercial Clean</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="details">Space details</label>
+            <textarea id="details" name="details" rows="5" placeholder="e.g., 3 bed / 2 bath, pets, any priority areas…" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="when">Preferred day/time</label>
+            <input id="when" name="when" type="text" placeholder="e.g., Monday mornings" />
+          </div>
+
+          <button class="btn btn--primary btn--wide" type="submit">Send Quote Request</button>
+
+          <p class="small subtle">
+            Tip: If you prefer, you can call/text instead. (Add your number here later.)
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__title">Spotless &amp; Co</p>
+        <p class="footer__small">We’ll get back to you ASAP.</p>
+      </div>
+      <div class="footer__links">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
